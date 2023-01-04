@@ -13,7 +13,7 @@ const refs = {
     message: '',
   };
   refs.emailInputRef.value = getInput.email;
-  refs.messageInputRef = getInput.message;
+  refs.messageInputRef.value = getInput.message;
 })();
 
 refs.formRef.addEventListener(
@@ -33,11 +33,11 @@ refs.formRef.addEventListener(
 
 refs.formRef.addEventListener('submit', e => {
   e.preventDefault();
-  const {
-    elements: { email, message },
-  } = e.currentTarget;
 
-  console.log(email.value, message.value);
+  console.log({
+    email: e.currentTarget.elements.email.value,
+    message: e.currentTarget.elements.message.value,
+  });
   e.currentTarget.reset();
   localStorage.clear();
 });
