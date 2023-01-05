@@ -23,8 +23,8 @@ refs.formRef.addEventListener(
       localStorage.setItem(
         'input',
         JSON.stringify({
-          email: e.currentTarget.elements.email.value,
-          message: e.currentTarget.elements.message.value,
+          email: refs.emailInputRef.value,
+          message: refs.messageInputRef.value,
         })
       ),
     500
