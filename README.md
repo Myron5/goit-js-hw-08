@@ -1,5 +1,5 @@
-# JavaScript homework 2 (localStorage)
+# JavaScript homework 3 (localStorage)
 
-## Image gallery
-## Video playback
-## Feedback form
+- Image gallery
+- Video playback
+- Feedback form
